@@ -8,11 +8,11 @@
 
 
 puts "Cleaning database... "
-Flats.destroy_all
+Flat.destroy_all
 
 puts "Creating flats"
 
-Flat.create!(
+flat1 = Flat.create!(
   name: 'Light & Spacious Garden Flat London',
   address: '10 Clifton Gardens London W9 1DT',
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
@@ -20,7 +20,9 @@ Flat.create!(
   number_of_guests: 3
 )
 
-Flat.create!(
+puts "#{flat1.name} created"
+
+flat2 = Flat.create!(
   name: 'Cozy and Charming Flat in Rio',
   address: '39 Taylor Street, Glória',
   description: 'Confortable flat with a nice view. Cozy and charming, perfect for couples',
@@ -28,7 +30,10 @@ Flat.create!(
   number_of_guests: 2
 )
 
+puts "#{flat2.name} created"
+
 puts "created #{Flat.count} flats"
+
 
 
 
