@@ -10,6 +10,7 @@ gem 'sqlite3', '~> 1.4'
 #other
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
+# gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'simple_form'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
